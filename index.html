@@ -9,52 +9,67 @@
 <body>
 
 <form class="register-form">
-    <label>Повне ім'я
-        <input type="text" name="fullname">
-    </label>
-
-    <label>Email
-        <input type="email" name="email">
-    </label>
-
-    <label>Пароль
-        <input type="password" name="password">
-    </label>
-
-    <label>Пароль ще раз
-        <input type="password" name="password2">
-    </label>
-
-    <label>Стать</label>
-    <div class="gender">
-        <label><input type="radio" name="gender" value="male" checked> чоловіча</label>
-        <label><input type="radio" name="gender" value="female"> жіноча</label>
+    <div class="form-row">
+        <label for="fullname">Повне ім'я</label>
+        <input type="text" id="fullname" name="fullname">
     </div>
 
-    <label>Вік
-        <input type="number" name="age" min="0">
-    </label>
+    <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+    </div>
 
-    <label>Курс
-        <select name="course">
+    <div class="form-row">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <div class="form-row">
+        <label for="password2">Пароль ще раз</label>
+        <input type="password" id="password2" name="password2">
+    </div>
+
+    <div class="form-row">
+        <label>Стать</label>
+        <div class="gender">
+            <label><input type="radio" name="gender" value="male" checked> чоловіча</label>
+            <label><input type="radio" name="gender" value="female"> жіноча</label>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <label for="age">Вік</label>
+        <input type="number" id="age" name="age" min="0">
+    </div>
+
+    <div class="form-row">
+        <label for="course">Курс</label>
+        <select id="course" name="course">
             <option selected disabled>-:=Виберіть курс=:-</option>
             <option>HTML</option>
             <option>CSS</option>
             <option>JavaScript</option>
         </select>
-    </label>
+    </div>
 
-    <label>Повна адреса
-        <textarea name="address" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
-    </label>
+    <div class="form-row">
+        <label for="address">Повна адреса</label>
+        <textarea id="address" name="address" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+    </div>
 
-    <label class="agreement">
-        <input type="checkbox" name="agree"> Я погоджуюсь з обробкою персональних даних
-    </label>
+    <div class="form-row checkbox-row">
+        <label></label>
+        <label class="agreement">
+            <input type="checkbox" name="agree"> Я погоджуюсь з обробкою персональних даних
+        </label>
+    </div>
 
-    <div class="buttons">
-        <button type="reset">Очистити форму</button>
-        <button type="submit">Зареєструватися</button>
+    <div class="form-row buttons">
+        <label></label>
+        <div>
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареєструватися</button>
+        </div>
     </div>
 </form>
 
