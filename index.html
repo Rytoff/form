@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<form class="register-form">
+    <label>Повне ім'я
+        <input type="text" name="fullname">
+    </label>
+
+    <label>Email
+        <input type="email" name="email">
+    </label>
+
+    <label>Пароль
+        <input type="password" name="password">
+    </label>
+
+    <label>Пароль ще раз
+        <input type="password" name="password2">
+    </label>
+
+    <label>Стать</label>
+    <div class="gender">
+        <label><input type="radio" name="gender" value="male" checked> чоловіча</label>
+        <label><input type="radio" name="gender" value="female"> жіноча</label>
+    </div>
+
+    <label>Вік
+        <input type="number" name="age" min="0">
+    </label>
+
+    <label>Курс
+        <select name="course">
+            <option selected disabled>-:=Виберіть курс=:-</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select>
+    </label>
+
+    <label>Повна адреса
+        <textarea name="address" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+    </label>
+
+    <label class="agreement">
+        <input type="checkbox" name="agree"> Я погоджуюсь з обробкою персональних даних
+    </label>
+
+    <div class="buttons">
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+    </div>
+</form>
+
+</body>
+</html>
